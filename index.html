@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoaib Khan | Developer & AI Prompt Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    
+    <div id="cursor-glow"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+    <button id="theme-toggle" aria-label="Toggle Theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <a href="https://github.com/ShoaibKhanJ" target="_blank" class="social-icon" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/shoaibkj/" target="_blank" class="social-icon" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://x.com/Shoai_dev" target="_blank" class="social-icon" aria-label="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+    </a>
+</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="section fade-in">
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <img src="img/profile.png" alt="Shoaib Khan" class="profile-img">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Shoaib Khan</span> 👋</h1>
+            <h2 class="titles">Developer • AI Prompt Engineer • Vibe Coder • CS Student • Learner</h2>
+            <p class="tagline">Building Web Extentions, AI-powered Products, Intelligent Automations, and Modern Web Experiences.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://www.linkedin.com/in/shoaibkj/" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse"></div>
+        </div>
+    </header>
+
+    <section id="expertise" class="section reveal">
+        <h2 class="section-title">Expertise</h2>
+        <div class="grid-3">
+            <div class="card glass">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                <h3>Full Stack Development</h3>
+                <p>I architect and build modern, scalable web applications from scratch, focusing on seamless frontend experiences and robust backend performance.</p>
+                <div class="tech-stack">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>PHP</span><span>Node.js</span>
+                </div>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                <h3>AI & GenAI</h3>
+                <p>Specializing in leveraging cutting-edge LLMs and building AI-driven solutions that automate processes and empower intelligent decision making.</p>
+                <div class="tech-stack">
+                    <span>Prompt Engineering</span><span>AI Agents</span><span>OpenAI APIs</span><span>RAG Systems</span>
+                </div>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                <h3>Dev Tools & Cloud (beginner)</h3>
+                <p>Proficient in modern deployment, version control, and database management to ensure smooth and reliable application delivery.</p>
+                <div class="tech-stack">
+                    <span>Git</span><span>GitHub</span><span>VS Code</span><span>Firebase</span><span>Supabase</span><span>Vercel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="section reveal">
+        <h2 class="section-title">Career History</h2>
+        <div class="timeline">
+            <div class="timeline-item left reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                    <span class="date">2026 - Present</span>
+                    <h3>AI Prompt Engineer</h3>
+                    <p>Designing sophisticated prompt architectures, developing RAG systems, and integrating intelligent AI agents into enterprise products.</p>
+                </div>
+            </div>
+            <div class="timeline-item right reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                    <span class="date">2026 - Present </span>
+                    <h3>Full Stack Developer</h3>
+                    <p>Built responsive, performant web applications and intuitive user interfaces utilizing modern JavaScript frameworks.</p>
+                </div>
+            </div>
+            <div class="timeline-item left reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                    <span class="date">2026 - Present </span>
+                    <h3>Started Building AI Products</h3>
+                    <p>Began experimenting with foundational models, building SaaS prototypes, and creating automations leveraging OpenAI's APIs.</p>
+                </div>
+            </div>
+            <div class="timeline-item right reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                    <span class="date">2025</span>
+                    <h3>Started Computer Science Journey</h3>
+                    <p>Embarked on formal CS education, mastering algorithms, data structures, and core programming paradigms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid-2">
+            <div class="project-card glass group">
+                <div class="project-img">
+                    <img src="img/AIE.png" alt="AI Resume Analyzer">
+                </div>
+                <div class="project-info">
+                    <h3>AetherWrite AI</h3>
+                    <p>An intelligent writing tool that generates structured, high-quality essays from simple prompts using advanced artificial intelligence.</p>
+                    <div class="tech-stack"><span>Python</span><span>JavaScript</span><span>CSS</span><span>API</span></div>
+                    <div class="project-links">
+                        <a href="https://aether-write-ai.vercel.app/" class="btn btn-outline">Live Demo</a>
+                        <a href="https://github.com/ShoaibKhanJ/AetherWrite-AI" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass group">
+                <div class="project-img">
+                    <img src="img/DevNexa.png" alt="AI Chatbot SaaS">
+                </div>
+                <div class="project-info">
+                    <h3>DevNexa</h3>
+                    <p>A Transforming ideas into high converting digital experiences through AI, web development, and smart automation.</p>
+                    <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-links">
+                        <a href="https://shoaibkhanj.github.io/DevNexa/" class="btn btn-outline">Live Demo</a>
+                        <a href="https://github.com/ShoaibKhanJ/DevNexa" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass group">
+                <div class="project-img">
+                    <img src="img/quotecure.png" alt="Prompt Engineering Toolkit">
+                </div>
+                <div class="project-info">
+                    <h3>Quote Cure</h3>
+                    <p>A smart quote collection platform that organizes inspirational quotes by mood, author, and category for a personalized reading experience.</p>
+                    <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass group">
+                <div class="project-img">
+                    <img src="img/soon.jpg" alt="Developer Portfolio Generator">
+                </div>
+                <div class="project-info">
+                    <h3>Web Extention - (SOON)</h3>
+                <p>Coming Soon</p>
+                    <div class="tech-stack"><span>#</span><span>#</span></div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact" class="section reveal">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container glass">
+            <div class="contact-text">
+                <h3>Got a project waiting to be realized?</h3>
+                <p>Let's collaborate and make it happen!</p>
+            </div>
+            <form id="contact-form">
+                <div class="form-row"><hidden></hidden>
+                    <input type="text" placeholder="Your Name *" required>
+                    <input type="email" placeholder="Email / Phone *" required>
+                </div>
+                <textarea placeholder="Message *" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary submit-btn">
+                    SEND <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </form>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com/ShoaibKhanJ" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a href="https://www.linkedin.com/in/shoaibkj/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+        <p>Designed & built by Shoaib Khan with 💜</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
